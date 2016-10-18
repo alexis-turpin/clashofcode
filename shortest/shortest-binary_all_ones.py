@@ -24,4 +24,8 @@ Download the files provided in the test script:
 31: IN / OUT
 1023: IN / OUT
 """
-print str(set(bin(input())[2:])=={'1'}).lower()
+# Python2.X solution (44 bytes)
+print str(not'0'in bin(input())[2:]).lower()
+
+# Python3.X solution (50 bytes)
+print(str(not'0'in bin(int(input()))[2:]).lower())

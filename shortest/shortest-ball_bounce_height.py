@@ -28,15 +28,10 @@ Example 2: in.txt out.txt
 Example 3: in.txt out.txt
 Maximum: in.txt out.txt
 """
+# After the sixth rebound the height will be H/2/2/2/2/2/2 == H/(2**6) == H/64
+
+# Python2.X solution (16 bytes)
 print input()*64
 
-
-h=input()
-for _ in range(6):h*=2
-print h
-
-
-h = input()
-for _ in range(6):
-    h *= 2
-print h
+# Python3.X solution (22 bytes)
+print(int(input())*64)
