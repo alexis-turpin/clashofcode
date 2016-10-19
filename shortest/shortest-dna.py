@@ -35,5 +35,9 @@ G: in.txt out.txt
 T: in.txt out.txt
 GATTACA: in.txt out.txt
 """
+# Original Python2.X Solution (75 Bytes)
 import string
 print raw_input().translate(string.maketrans('ACTG','TGAC'))
+
+# Python3.X Solution (56 Bytes)
+print(*['TGAC'['ACTG'.index(a)]for a in input()],sep="")

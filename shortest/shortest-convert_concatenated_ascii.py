@@ -18,5 +18,6 @@ Input
 Output
 Coding
 """
+# Python3.X solution (94 bytes)
 s=input()
-print("ERROR"if len(s)%3!=0 else ''.join(chr(int(s[x:x+3]))for x in range(0,len(s),3)))
+print([''.join(chr(int(s[x:x+3]))for x in range(0,len(s),3)),"ERROR"][len(s)%3!=0])

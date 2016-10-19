@@ -25,5 +25,6 @@ Test n°5: IN / OUT
 Test n°7: IN / OUT
 Test n°9: IN / OUT
 """
-a,b=[int(i)for i in input().split()]
-print(''.join(str(x)for x in [a-b,a+b]))
+# Python3.X Solution (51 bytes)
+a,b=map(int,input().split())
+print(a-b,a+b,sep="")

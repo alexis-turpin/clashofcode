@@ -27,7 +27,7 @@ Output
 8:*
 9:
 """
-import collections as c
+# Python3.X Solution (95 Bytes)
 input()
-x=c.Counter(int(x)for x in input().split())
-for v in range(1,10):print(v,':','*'*x[v],sep='')
+x,v=list(map(int,input().split())),0
+while v<10:print(str(v)+':'+'*'*x.count(v));v+=1
